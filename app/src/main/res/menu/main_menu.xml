@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_wine_list"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/action_db_main"
+        android:title="Quản lý rượu" />
+    <item
+        android:id="@+id/action_manufacturer"
+        android:title="Danh sách nhà sản xuất" />
+    <item
+        android:id="@+id/action_about"
+        android:title="Giới thiệu" />
+
+</menu>

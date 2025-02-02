@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:titleTextColor="@android:color/white"
+        android:title="Quản lý nhà sản xuất" />
+
+    <!-- Button for Adding Manufacturer -->
+    <Button
+        android:id="@+id/btnAddManufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thêm Nhà Sản Xuất"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_700"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/lvManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp" />
+</LinearLayout>

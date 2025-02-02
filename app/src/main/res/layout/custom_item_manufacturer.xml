@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvIdManufacturer"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvNameManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer Name"
+        android:paddingStart="16dp"
+        android:textSize="16sp" />
+</LinearLayout>

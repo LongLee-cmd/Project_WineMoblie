@@ -1,0 +1,129 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Hình ảnh đại diện cho từng loại rượu -->
+    <ImageView
+        android:id="@+id/imgWine"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical" />
+
+    <!-- Phần thông tin chi tiết của rượu -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên rượu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên rượu:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvNameWine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Wine"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Mã hãng sản xuất -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã hãng sản xuất:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvIDHangSX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Loại rượu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại rượu:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvTypeWine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Wine"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Mô tả rượu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvDescriptionWine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Description"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

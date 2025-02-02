@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên rượu"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loại rượu"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner for Manufacturer -->
+        <Spinner
+            android:id="@+id/spinnerManufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn hình"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgWinePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <Button
+            android:id="@+id/btnAddWine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm rượu"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+    </LinearLayout>
+</ScrollView>

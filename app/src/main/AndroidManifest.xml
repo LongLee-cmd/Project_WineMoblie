@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAGkT0-6rFXnUHWPb1eteBlTVuoWboq2kY" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wine_GK"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditManufacturerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddManufacturer_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".WineDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddWineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManufacturerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DB_MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAGkT0-6rFXnUHWPb1eteBlTVuoWboq2kY" />
+
+        <activity
+            android:name=".About_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".WineList_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
